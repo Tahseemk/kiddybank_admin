@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
+import "react-toastify/dist/ReactToastify.css";
 import { PersistGate } from 'redux-persist/integration/react';
 import store from "./Redux/store";
 import { persistor } from "./Redux/store";
-import "react-toastify/dist/ReactToastify.css";
-import './Styles/styles.css'
-import "./index.css";
+import './asstes/scss/main.scss';
+import 'react-datepicker/dist/react-datepicker.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
 import App from "./App";
 
 const root = ReactDOM.createRoot(

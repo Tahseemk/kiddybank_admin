@@ -15,12 +15,10 @@ import {
   REGISTER,
 } from 'redux-persist';
 
-
 const persistConfig = {
-  key: "kiddybank_admin",
+  key: "bold_portable_webapp",
   storage: storage,
 };
-
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

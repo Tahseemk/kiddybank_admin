@@ -1,5 +1,6 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { Circles } from "react-loader-spinner";
+import './Loader.css';
 
 const Loading = () => {
   return (
@@ -8,7 +9,7 @@ const Loading = () => {
         <Circles
           height="80"
           width="80"
-          color="#755DD9"
+          color="#f26419"
           ariaLabel="circles-loading"
           wrapperStyle={{}}
           wrapperClass=""
@@ -19,9 +20,9 @@ const Loading = () => {
   );
 };
 
-const IsLoadingHOC = (WrappedComponent : any) => {
+const IsLoadingHOC = (WrappedComponent: any) => {
   function HOC(props: any) {
-    const [isLoading, setLoading] = useState<boolean>(false);
+    const [isLoading, setLoading] = useState(false);
 
     const setLoadingState = (isComponentLoading: boolean) => {
       setLoading(isComponentLoading);

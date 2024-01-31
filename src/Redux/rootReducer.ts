@@ -1,13 +1,14 @@
-import { combineReducers ,AnyAction } from '@reduxjs/toolkit';
-import auth from './Reducers/authSlice';
-import notification from './Reducers/notificationSlice';
-import app from './Reducers/appSlice';
+import { AnyAction, combineReducers} from '@reduxjs/toolkit';
+import  auth  from './Reducers/authSlice';
+import  product from './Reducers/productSlice';
+import notification from './Reducers/notification';
 
 const appReducer = combineReducers({
     auth ,
-    notification,
-    app
+    product,
+    notification
 })
+
 
 const rootReducer = (state : any, action : AnyAction ) => {
     if (action.type === 'auth/logout') {
@@ -15,7 +16,6 @@ const rootReducer = (state : any, action : AnyAction ) => {
     }
     return appReducer(state, action)
 }
-
 
 export type RootState = ReturnType<typeof rootReducer>
 
