@@ -348,8 +348,12 @@ const ProductDrawer = ({ id }) => {
                     Select Risk
                   </option>
                   <option value="Low risk">Low risk</option>
-                  <option value="Medium risk">Medium risk</option>
-                  <option value="High risk">High risk</option>
+                  <option value="Secure risk">Secure risk</option>
+                  <option value="Full profit">Full profit</option>
+                  <option value="Steady growth">Steady growth</option>
+                  <option value="Substantial return">Substantial return</option>
+                  <option value="High rewards">High rewards</option>
+                  <option value="Maximum growth">Maximum growth</option>
                 </Select>
                 <Error errorName={formik.errors.risk} />
               </div>
